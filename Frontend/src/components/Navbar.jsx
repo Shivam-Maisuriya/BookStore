@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Navbar() {
+
+  const [sticky, setSticky] = useState(false)
+
+  // Navigation Items links
   const navItems = (
     <>
       <li>
@@ -17,12 +21,13 @@ function Navbar() {
       </li>
     </>
   );
+
   return (
     <>
-      <div className="max-w-screen-2xl container m-auto md:px-20 px-4">
+      <div className="max-w-screen-2xl container m-auto md:px-20 px-4 fixed top-0 left-0 right-0">
         <div className="navbar bg-base-100">
+          {/* hamburger */}
           <div className="navbar-start">
-            {/* hamburger */}
             <div className="dropdown">
               <div
                 tabIndex={0}
@@ -66,7 +71,11 @@ function Navbar() {
             {/* search text */}
             <div className="hidden md:block ">
               <label className="flex items-center gap-2 px-3 py-2 border rounded-lg">
-                <input type="text" className="grow outline-none bg-transparent" placeholder="Search" />
+                <input
+                  type="text"
+                  className="grow outline-none bg-transparent"
+                  placeholder="Search"
+                />
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 16 16"
@@ -118,7 +127,6 @@ function Navbar() {
                 Login
               </a>
             </div>
-
           </div>
         </div>
       </div>
