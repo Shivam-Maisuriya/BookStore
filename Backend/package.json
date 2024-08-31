@@ -1,12 +1,19 @@
 {
-  "name": "backend",
+  "name": "bookstore",
   "version": "1.0.0",
+  "description": "mern project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shivam-Maisuriya/BookStore.git"
+  },
+  "author": "Shivam",
   "license": "ISC",
-  "description": ""
+  "bugs": {
+    "url": "https://github.com/Shivam-Maisuriya/BookStore/issues"
+  },
+  "homepage": "https://github.com/Shivam-Maisuriya/BookStore#readme"
 }
