@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Cards from "./Cards";
 import { Link } from "react-router-dom";
+
+// to interact  with the API
 import axios from "axios";
 
 function Course() {
   const [book, setBook] = useState([]);
+
+  // taking data from  backend
   useEffect(() => {
     const getBook = async () => {
       try {

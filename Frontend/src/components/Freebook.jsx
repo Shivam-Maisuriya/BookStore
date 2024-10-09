@@ -11,6 +11,8 @@ import axios from "axios";
 
 function Freebook() {
   const [book, setBook] = useState([]);
+
+  // taking books data from mongoose
   useEffect(() => {
     const getBook = async () => {
       try {
@@ -74,6 +76,7 @@ function Freebook() {
 
         <div>
           <Slider {...settings}>
+            {/* showing books */}
             {book.map((item) => (
               <Cards item={item} key={item.id} />
             ))}
